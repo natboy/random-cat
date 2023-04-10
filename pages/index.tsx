@@ -9,12 +9,6 @@ type Props = {
 const IndexPage: NextPage<Props> = ({initialImageUrl}) => {
     const [imageUrl, setImageUrl] = useState(initialImageUrl);
     const [loading, setLoading] = useState(false);
-    // useEffect(() => {
-    //     fetchImage().then((newImage) => {
-    //         setImageUrl(newImage.url);
-    //         setLoading(false);
-    //     })
-    // }, []);
 
     const handleClick = async () => {
         setLoading(true);
